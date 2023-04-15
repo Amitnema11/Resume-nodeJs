@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+   
+<form action="/creater" method="POST">
+  <h1 class="text-center alert alert-primary">Create Resume</h1>
+  <h1 class="text-center alert alert-success w-50">Personal information</h1>
+  <div class="text-center w-50">
+  <input type="text" name="name" placeholder="Full name" class="w-100" > <br> <br>
+  <input type="email" name="email" placeholder="Email"class="w-100"> <br> <br>
+  <input type="number" name="contact" maxlength="10" placeholder="Contact"class="w-100"> <br> <br>
+  <input type="url" name="photo" placeholder="Image-url" class="w-100"><br> <br>
+</div>
+
+  <h1 class="text-center alert alert-success w-50 ">Professional information</h1>
+  <div class="text-center w-50 ">
+  <input type="text" name="skill" placeholder="Skills" class="w-100"><br> <br>
+  <input type="text" name="experience" placeholder="Experience" class="w-100"><br> <br>
+  <input type="text" name="projects" placeholder="Projects" class="w-100"><br> <br>
+  <input type="text" name="education" placeholder="Education" class="w-100"><br> <br>
+<button class="btn btn-dark w-100 ">Create Resume</button>
+</div>
+</form>
+
+  </body>
+</html>
